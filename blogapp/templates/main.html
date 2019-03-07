@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Blog Project Main Page</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/jumbotron/">
+
+    <!-- Bootstrap core CSS -->
+	<link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  
+  <body class="bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand text-warning font-weight-bold" href="{%url 'main'%}">LIKELION</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link text-warning font-weight-bold" href="{%url 'main'%}">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-warning font-weight-bold" href="{%url 'home'%}">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-warning font-weight-bold" href="{%url 'portfolio'%}">Portfolio</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-warning font-weight-bold" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="{%url 'signup'%}">SignUp</a>
+          <a class="dropdown-item" href="{%url 'login'%}">Login</a>
+          <a class="dropdown-item" href="#">Logout</a>
+        </div>
+      </li>
+    </ul>
+    
+  </div>
+</nav>
+
+<main role="main">
+<br><br>
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron bg-dark">
+    <div class="container">
+	<hr class="bg-warning">
+      <h1 class="display-3 text-warning font-weight-bold">Main Page</h1>
+	  <br>
+      <p class="text-muted font-weight-bold font-italic">Main, Blog, Portfolio, Account 페이지로 구성</p>
+	  <hr class="bg-warning">
+    </div>
+  </div>
+  
+  
+  <div class="container">
+  <hr class="bg-warning">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-4">
+        <h2 class="font-weight-bold text-warning">Blog</h2>
+		<ul>
+		<li class="font-weight-bold text-muted font-italic">blog 홈</li>
+		<li class="font-weight-bold text-muted font-italic">blog 글 작성</li>
+		<li class="font-weight-bold text-muted font-italic">작성한 글의 자세한 페이지</li>
+		</ul>
+        <a class="btn btn-secondary" href="{%url 'home'%}" role="button">View &raquo;</a>
+      </div>
+	  
+      <div class="col-md-4">
+        <h2 class="font-weight-bold text-warning">Portfolio</h2>
+		<br>
+		<ul>
+		<li class="font-weight-bold text-muted font-italic">Portfolio 페이지</li>
+		</ul>
+		<br>
+        <a class="btn btn-secondary" href="{%url 'portfolio'%}" role="button">View &raquo;</a>
+      </div>
+	  
+      <div class="col-md-4 ">
+        <h2 class="font-weight-bold text-warning">Account</h2>
+		<ul>
+		<li class="font-weight-bold text-muted font-italic">회원가입 페이지</li>
+		<li class="font-weight-bold text-muted font-italic">로그인 페이지</li>
+		<li class="font-weight-bold text-muted font-italic">로그아웃 기능</li>
+		</ul>
+        <a class="btn btn-secondary" href="{%url 'login'%}" role="button">View &raquo;</a>
+      </div>
+    </div>
+
+    <hr class="bg-warning">
+
+  </div> <!-- /container -->
+
+</main>
+
+<footer class="container">
+  <p class="font-weight-bold text-muted font-italic">blog project</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script></body>
+</html>
